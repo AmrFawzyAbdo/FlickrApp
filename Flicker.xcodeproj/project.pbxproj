@@ -3,43 +3,225 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E24F074122BD9E12006CD102 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F074022BD9E11006CD102 /* Config.swift */; };
+		E24F074422BE82F2006CD102 /* PhotosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F074322BE82F2006CD102 /* PhotosPresenter.swift */; };
+		E24F074622BE8344006CD102 /* PhotosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F074522BE8344006CD102 /* PhotosService.swift */; };
+		E24F074822BE8417006CD102 /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F074722BE8417006CD102 /* PhotosView.swift */; };
+		E24F074C22BE890A006CD102 /* GroupsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F074B22BE890A006CD102 /* GroupsPresenter.swift */; };
+		E24F074E22BE8959006CD102 /* GroupsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F074D22BE8959006CD102 /* GroupsService.swift */; };
+		E24F075022BE895F006CD102 /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F074F22BE895F006CD102 /* GroupsView.swift */; };
+		E24F075222BE9D13006CD102 /* photos.json in Resources */ = {isa = PBXBuildFile; fileRef = E24F075122BE9D13006CD102 /* photos.json */; };
+		E24F075A22BE9D9C006CD102 /* FlickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F075922BE9D9C006CD102 /* FlickerTests.swift */; };
+		E24F076222BEA2FC006CD102 /* groups.json in Resources */ = {isa = PBXBuildFile; fileRef = E24F076122BEA2FC006CD102 /* groups.json */; };
+		E24F078422BECBF4006CD102 /* GroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24F078322BECBF4006CD102 /* GroupCell.xib */; };
+		E24F078722BECD9E006CD102 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F078622BECD9E006CD102 /* UIViewController+Extension.swift */; };
+		E50F492695016A2D13AE064A /* Pods_Flicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B8C34359A2169691690F7F /* Pods_Flicker.framework */; };
+		ED0073CD22B963E900CE606F /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0073CC22B963E900CE606F /* GroupsVC.swift */; };
+		ED0073D122B9644500CE606F /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0073D022B9644500CE606F /* GroupCell.swift */; };
+		ED0073D722B967CB00CE606F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0073D522B967CB00CE606F /* PhotoCell.swift */; };
+		ED0073D822B967CB00CE606F /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED0073D622B967CB00CE606F /* PhotoCell.xib */; };
+		ED0073DB22B96F9A00CE606F /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0073DA22B96F9A00CE606F /* URLs.swift */; };
+		ED0073DF22B9739700CE606F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0073DE22B9739700CE606F /* Photo.swift */; };
+		EDE654C522BA7DB900856F12 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE654C422BA7DB900856F12 /* Group.swift */; };
 		EDFB20B922B6C1D300C48DF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFB20B822B6C1D300C48DF3 /* AppDelegate.swift */; };
-		EDFB20BB22B6C1D300C48DF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFB20BA22B6C1D300C48DF3 /* ViewController.swift */; };
 		EDFB20BE22B6C1D300C48DF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFB20BC22B6C1D300C48DF3 /* Main.storyboard */; };
 		EDFB20C022B6C1D500C48DF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDFB20BF22B6C1D500C48DF3 /* Assets.xcassets */; };
 		EDFB20C322B6C1D500C48DF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFB20C122B6C1D500C48DF3 /* LaunchScreen.storyboard */; };
+		EDFB20D122B6D3B000C48DF3 /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFB20D022B6D3B000C48DF3 /* PhotosVC.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E24F075C22BE9D9C006CD102 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFB20AD22B6C1D300C48DF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDFB20B422B6C1D300C48DF3;
+			remoteInfo = Flicker;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1860B5F781DB6E2D64AB49C4 /* Pods-Flicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flicker.release.xcconfig"; path = "Target Support Files/Pods-Flicker/Pods-Flicker.release.xcconfig"; sourceTree = "<group>"; };
+		5BFB52E7E4054CF0047A5652 /* Pods-Flicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flicker.debug.xcconfig"; path = "Target Support Files/Pods-Flicker/Pods-Flicker.debug.xcconfig"; sourceTree = "<group>"; };
+		E24F074022BD9E11006CD102 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		E24F074322BE82F2006CD102 /* PhotosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPresenter.swift; sourceTree = "<group>"; };
+		E24F074522BE8344006CD102 /* PhotosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosService.swift; sourceTree = "<group>"; };
+		E24F074722BE8417006CD102 /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
+		E24F074B22BE890A006CD102 /* GroupsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsPresenter.swift; sourceTree = "<group>"; };
+		E24F074D22BE8959006CD102 /* GroupsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsService.swift; sourceTree = "<group>"; };
+		E24F074F22BE895F006CD102 /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
+		E24F075122BE9D13006CD102 /* photos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = photos.json; sourceTree = "<group>"; };
+		E24F075722BE9D9C006CD102 /* FlickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E24F075922BE9D9C006CD102 /* FlickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerTests.swift; sourceTree = "<group>"; };
+		E24F075B22BE9D9C006CD102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E24F076122BEA2FC006CD102 /* groups.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = groups.json; sourceTree = "<group>"; };
+		E24F078322BECBF4006CD102 /* GroupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupCell.xib; sourceTree = "<group>"; };
+		E24F078622BECD9E006CD102 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		E2B8C34359A2169691690F7F /* Pods_Flicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED0073CC22B963E900CE606F /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
+		ED0073D022B9644500CE606F /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		ED0073D522B967CB00CE606F /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		ED0073D622B967CB00CE606F /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		ED0073DA22B96F9A00CE606F /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		ED0073DE22B9739700CE606F /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		EDE654C422BA7DB900856F12 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		EDFB20B522B6C1D300C48DF3 /* Flicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFB20B822B6C1D300C48DF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EDFB20BA22B6C1D300C48DF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EDFB20BD22B6C1D300C48DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDFB20BF22B6C1D500C48DF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDFB20C222B6C1D500C48DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDFB20C422B6C1D500C48DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDFB20D022B6D3B000C48DF3 /* PhotosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EDFB20B222B6C1D300C48DF3 /* Frameworks */ = {
+		E24F075422BE9D9C006CD102 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDFB20B222B6C1D300C48DF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E50F492695016A2D13AE064A /* Pods_Flicker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		242423CB8AFCC597CC768CD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2B8C34359A2169691690F7F /* Pods_Flicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E24F074222BE82D6006CD102 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E24F074A22BE88F7006CD102 /* Groups */,
+				E24F074922BE88EE006CD102 /* Photos */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E24F074922BE88EE006CD102 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				E24F074322BE82F2006CD102 /* PhotosPresenter.swift */,
+				E24F074522BE8344006CD102 /* PhotosService.swift */,
+				E24F074722BE8417006CD102 /* PhotosView.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		E24F074A22BE88F7006CD102 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				E24F074B22BE890A006CD102 /* GroupsPresenter.swift */,
+				E24F074D22BE8959006CD102 /* GroupsService.swift */,
+				E24F074F22BE895F006CD102 /* GroupsView.swift */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		E24F075822BE9D9C006CD102 /* FlickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E24F075922BE9D9C006CD102 /* FlickerTests.swift */,
+				E24F075B22BE9D9C006CD102 /* Info.plist */,
+			);
+			path = FlickerTests;
+			sourceTree = "<group>";
+		};
+		E24F078522BECD90006CD102 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E24F078622BECD9E006CD102 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ED0073C422B95D2200CE606F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED0073CF22B9641100CE606F /* Group */,
+				ED0073CE22B9640400CE606F /* Photo */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED0073C522B95DC300CE606F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED0073DE22B9739700CE606F /* Photo.swift */,
+				EDE654C422BA7DB900856F12 /* Group.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED0073C722B9621700CE606F /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				ED0073C922B962E000CE606F /* Main */,
+				ED0073CA22B962F700CE606F /* Launch */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		ED0073C922B962E000CE606F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EDFB20BC22B6C1D300C48DF3 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		ED0073CA22B962F700CE606F /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				EDFB20C122B6C1D500C48DF3 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		ED0073CE22B9640400CE606F /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				EDFB20D022B6D3B000C48DF3 /* PhotosVC.swift */,
+				ED0073D522B967CB00CE606F /* PhotoCell.swift */,
+				ED0073D622B967CB00CE606F /* PhotoCell.xib */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		ED0073CF22B9641100CE606F /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				ED0073CC22B963E900CE606F /* GroupsVC.swift */,
+				ED0073D022B9644500CE606F /* GroupCell.swift */,
+				E24F078322BECBF4006CD102 /* GroupCell.xib */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
 		EDFB20AC22B6C1D300C48DF3 = {
 			isa = PBXGroup;
 			children = (
 				EDFB20B722B6C1D300C48DF3 /* Flicker */,
+				E24F075822BE9D9C006CD102 /* FlickerTests */,
 				EDFB20B622B6C1D300C48DF3 /* Products */,
+				FA2E147D528BB6248BE7B79A /* Pods */,
+				242423CB8AFCC597CC768CD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				EDFB20B522B6C1D300C48DF3 /* Flicker.app */,
+				E24F075722BE9D9C006CD102 /* FlickerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,25 +238,60 @@
 			isa = PBXGroup;
 			children = (
 				EDFB20B822B6C1D300C48DF3 /* AppDelegate.swift */,
-				EDFB20BA22B6C1D300C48DF3 /* ViewController.swift */,
-				EDFB20BC22B6C1D300C48DF3 /* Main.storyboard */,
+				E24F074022BD9E11006CD102 /* Config.swift */,
+				ED0073DA22B96F9A00CE606F /* URLs.swift */,
+				E24F078522BECD90006CD102 /* Extensions */,
+				ED0073C522B95DC300CE606F /* Model */,
+				ED0073C422B95D2200CE606F /* View */,
+				E24F074222BE82D6006CD102 /* Presenter */,
+				ED0073C722B9621700CE606F /* StoryBoard */,
 				EDFB20BF22B6C1D500C48DF3 /* Assets.xcassets */,
-				EDFB20C122B6C1D500C48DF3 /* LaunchScreen.storyboard */,
 				EDFB20C422B6C1D500C48DF3 /* Info.plist */,
+				E24F075122BE9D13006CD102 /* photos.json */,
+				E24F076122BEA2FC006CD102 /* groups.json */,
 			);
 			path = Flicker;
+			sourceTree = "<group>";
+		};
+		FA2E147D528BB6248BE7B79A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BFB52E7E4054CF0047A5652 /* Pods-Flicker.debug.xcconfig */,
+				1860B5F781DB6E2D64AB49C4 /* Pods-Flicker.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E24F075622BE9D9C006CD102 /* FlickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E24F075E22BE9D9C006CD102 /* Build configuration list for PBXNativeTarget "FlickerTests" */;
+			buildPhases = (
+				E24F075322BE9D9C006CD102 /* Sources */,
+				E24F075422BE9D9C006CD102 /* Frameworks */,
+				E24F075522BE9D9C006CD102 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E24F075D22BE9D9C006CD102 /* PBXTargetDependency */,
+			);
+			name = FlickerTests;
+			productName = FlickerTests;
+			productReference = E24F075722BE9D9C006CD102 /* FlickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EDFB20B422B6C1D300C48DF3 /* Flicker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDFB20C722B6C1D500C48DF3 /* Build configuration list for PBXNativeTarget "Flicker" */;
 			buildPhases = (
+				2544D76F9C0A3260096FF1DB /* [CP] Check Pods Manifest.lock */,
 				EDFB20B122B6C1D300C48DF3 /* Sources */,
 				EDFB20B222B6C1D300C48DF3 /* Frameworks */,
 				EDFB20B322B6C1D300C48DF3 /* Resources */,
+				A48AF7EBA9AA97E5260D6FE1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -90,10 +308,14 @@
 		EDFB20AD22B6C1D300C48DF3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Amr fawzy";
 				TargetAttributes = {
+					E24F075622BE9D9C006CD102 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = EDFB20B422B6C1D300C48DF3;
+					};
 					EDFB20B422B6C1D300C48DF3 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -113,34 +335,118 @@
 			projectRoot = "";
 			targets = (
 				EDFB20B422B6C1D300C48DF3 /* Flicker */,
+				E24F075622BE9D9C006CD102 /* FlickerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E24F075522BE9D9C006CD102 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EDFB20B322B6C1D300C48DF3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED0073D822B967CB00CE606F /* PhotoCell.xib in Resources */,
+				E24F076222BEA2FC006CD102 /* groups.json in Resources */,
+				E24F075222BE9D13006CD102 /* photos.json in Resources */,
 				EDFB20C322B6C1D500C48DF3 /* LaunchScreen.storyboard in Resources */,
 				EDFB20C022B6C1D500C48DF3 /* Assets.xcassets in Resources */,
+				E24F078422BECBF4006CD102 /* GroupCell.xib in Resources */,
 				EDFB20BE22B6C1D300C48DF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2544D76F9C0A3260096FF1DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A48AF7EBA9AA97E5260D6FE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flicker/Pods-Flicker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flicker/Pods-Flicker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flicker/Pods-Flicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		E24F075322BE9D9C006CD102 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E24F075A22BE9D9C006CD102 /* FlickerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EDFB20B122B6C1D300C48DF3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDFB20BB22B6C1D300C48DF3 /* ViewController.swift in Sources */,
+				E24F078722BECD9E006CD102 /* UIViewController+Extension.swift in Sources */,
+				EDE654C522BA7DB900856F12 /* Group.swift in Sources */,
+				E24F074E22BE8959006CD102 /* GroupsService.swift in Sources */,
+				ED0073D122B9644500CE606F /* GroupCell.swift in Sources */,
+				E24F074422BE82F2006CD102 /* PhotosPresenter.swift in Sources */,
+				ED0073DB22B96F9A00CE606F /* URLs.swift in Sources */,
+				E24F074C22BE890A006CD102 /* GroupsPresenter.swift in Sources */,
+				E24F075022BE895F006CD102 /* GroupsView.swift in Sources */,
+				E24F074622BE8344006CD102 /* PhotosService.swift in Sources */,
+				E24F074822BE8417006CD102 /* PhotosView.swift in Sources */,
+				EDFB20D122B6D3B000C48DF3 /* PhotosVC.swift in Sources */,
+				ED0073D722B967CB00CE606F /* PhotoCell.swift in Sources */,
+				ED0073DF22B9739700CE606F /* Photo.swift in Sources */,
+				E24F074122BD9E12006CD102 /* Config.swift in Sources */,
+				ED0073CD22B963E900CE606F /* GroupsVC.swift in Sources */,
 				EDFB20B922B6C1D300C48DF3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E24F075D22BE9D9C006CD102 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDFB20B422B6C1D300C48DF3 /* Flicker */;
+			targetProxy = E24F075C22BE9D9C006CD102 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EDFB20BC22B6C1D300C48DF3 /* Main.storyboard */ = {
@@ -162,6 +468,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E24F075F22BE9D9C006CD102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlickerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amr.FlickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flicker.app/Flicker";
+			};
+			name = Debug;
+		};
+		E24F076022BE9D9C006CD102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlickerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amr.FlickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flicker.app/Flicker";
+			};
+			name = Release;
+		};
 		EDFB20C522B6C1D500C48DF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -280,6 +626,7 @@
 		};
 		EDFB20C822B6C1D500C48DF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BFB52E7E4054CF0047A5652 /* Pods-Flicker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -288,15 +635,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Amr.com.Flicker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amr.Flicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		EDFB20C922B6C1D500C48DF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1860B5F781DB6E2D64AB49C4 /* Pods-Flicker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,9 +653,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Amr.com.Flicker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amr.Flicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -315,6 +663,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E24F075E22BE9D9C006CD102 /* Build configuration list for PBXNativeTarget "FlickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E24F075F22BE9D9C006CD102 /* Debug */,
+				E24F076022BE9D9C006CD102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EDFB20B022B6C1D300C48DF3 /* Build configuration list for PBXProject "Flicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

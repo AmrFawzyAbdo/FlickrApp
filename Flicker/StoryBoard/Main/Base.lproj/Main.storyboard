@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ch9-f5-9Dn">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Groups-->
+        <scene sceneID="bh9-Bb-oVp">
+            <objects>
+                <viewController id="1Ps-Hn-QFF" customClass="GroupsVC" customModule="Flicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AV5-2g-vOe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lvG-c6-Tp3">
+                                <rect key="frame" x="20" y="104" width="374" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter image name (e.g Flower)" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="cMK-gy-H9B">
+                                        <rect key="frame" x="0.0" y="0.0" width="304.33333333333331" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Enter image name (e.g Kitten)"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gty-ww-kvG">
+                                        <rect key="frame" x="312.33333333333331" y="0.0" width="61.666666666666686" height="30"/>
+                                        <state key="normal" title="Search"/>
+                                        <connections>
+                                            <action selector="searchButton:" destination="1Ps-Hn-QFF" eventType="touchUpInside" id="GXH-jd-vvt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cDc-wn-JsX">
+                                <rect key="frame" x="0.0" y="150" width="414" height="663"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pwc-hM-Gsi">
+                                    <size key="itemSize" width="411" height="105"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cDc-wn-JsX" firstAttribute="top" secondItem="lvG-c6-Tp3" secondAttribute="bottom" constant="16" id="3mT-UP-0Us"/>
+                            <constraint firstItem="coM-dr-dHv" firstAttribute="bottom" secondItem="cDc-wn-JsX" secondAttribute="bottom" id="Oz9-lK-3Tn"/>
+                            <constraint firstItem="lvG-c6-Tp3" firstAttribute="leading" secondItem="coM-dr-dHv" secondAttribute="leading" constant="20" id="Udd-Ao-fg0"/>
+                            <constraint firstItem="coM-dr-dHv" firstAttribute="trailing" secondItem="cDc-wn-JsX" secondAttribute="trailing" id="bRI-Yq-Ea5"/>
+                            <constraint firstItem="coM-dr-dHv" firstAttribute="trailing" secondItem="lvG-c6-Tp3" secondAttribute="trailing" constant="20" id="mSP-9v-BSg"/>
+                            <constraint firstItem="cDc-wn-JsX" firstAttribute="leading" secondItem="AV5-2g-vOe" secondAttribute="leading" id="mga-ZN-3Rq"/>
+                            <constraint firstItem="lvG-c6-Tp3" firstAttribute="top" secondItem="coM-dr-dHv" secondAttribute="top" constant="16" id="nef-1P-wyg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="coM-dr-dHv"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Groups" id="62M-AN-wu2"/>
+                    <connections>
+                        <outlet property="collectionView" destination="cDc-wn-JsX" id="Crx-fN-MGN"/>
+                        <outlet property="searchButton" destination="gty-ww-kvG" id="8Q7-Fd-UPI"/>
+                        <outlet property="searchTextField" destination="cMK-gy-H9B" id="xhW-9Z-ozi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1L-IZ-ago" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2430.434782608696" y="308.70535714285711"/>
+        </scene>
+        <!--Photos-->
+        <scene sceneID="BXw-am-ags">
+            <objects>
+                <viewController id="iNr-wp-zyq" customClass="PhotosVC" customModule="Flicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fAo-Ie-IBp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="98l-el-goW">
+                                <rect key="frame" x="0.0" y="150" width="414" height="663"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qbw-fL-Was">
+                                    <size key="itemSize" width="102" height="101"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sWM-BM-bbF">
+                                <rect key="frame" x="20" y="104" width="374" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter image name (e.g Flower)" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="YnG-ml-IMF">
+                                        <rect key="frame" x="0.0" y="0.0" width="304.33333333333331" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Enter image name (e.g Kitten)"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3p-Eo-cIK">
+                                        <rect key="frame" x="312.33333333333331" y="0.0" width="61.666666666666686" height="30"/>
+                                        <state key="normal" title="Search"/>
+                                        <connections>
+                                            <action selector="searchButton:" destination="iNr-wp-zyq" eventType="touchUpInside" id="7cZ-uY-gIQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sWM-BM-bbF" firstAttribute="top" secondItem="ktn-ht-RuP" secondAttribute="top" constant="16" id="OOr-ch-tsr"/>
+                            <constraint firstItem="98l-el-goW" firstAttribute="bottom" secondItem="ktn-ht-RuP" secondAttribute="bottom" id="Vps-My-9Sy"/>
+                            <constraint firstItem="98l-el-goW" firstAttribute="trailing" secondItem="ktn-ht-RuP" secondAttribute="trailing" id="c0G-yi-aN0"/>
+                            <constraint firstItem="sWM-BM-bbF" firstAttribute="leading" secondItem="ktn-ht-RuP" secondAttribute="leading" constant="20" id="m8f-Sa-8z8"/>
+                            <constraint firstItem="98l-el-goW" firstAttribute="leading" secondItem="ktn-ht-RuP" secondAttribute="leading" id="ndF-cx-OTy"/>
+                            <constraint firstItem="98l-el-goW" firstAttribute="top" secondItem="sWM-BM-bbF" secondAttribute="bottom" constant="16" id="o8c-ak-Y6b"/>
+                            <constraint firstItem="ktn-ht-RuP" firstAttribute="trailing" secondItem="sWM-BM-bbF" secondAttribute="trailing" constant="20" id="rgb-VW-fhm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ktn-ht-RuP"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Photos" id="BPN-Li-xQk"/>
+                    <connections>
+                        <outlet property="collectionView" destination="98l-el-goW" id="sba-gn-n7t"/>
+                        <outlet property="searchButton" destination="j3p-Eo-cIK" id="KZT-Ga-g6j"/>
+                        <outlet property="searchTextField" destination="YnG-ml-IMF" id="pm2-ag-I75"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUA-Ka-7Ts" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2431.8840579710145" y="-340.17857142857139"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="zJD-0f-8V4">
+            <objects>
+                <tabBarController id="ch9-f5-9Dn" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vdv-6r-s3m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="g4f-cV-u8q" kind="relationship" relationship="viewControllers" id="db1-g2-Pog"/>
+                        <segue destination="qUv-1L-drI" kind="relationship" relationship="viewControllers" id="mFf-mq-g8k"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cte-Iw-mmv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="603" y="-15"/>
+        </scene>
+        <!--Photos-->
+        <scene sceneID="EqP-D5-Z97">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g4f-cV-u8q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Photos" image="photo-7" id="3pg-En-yke"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JPF-st-9oZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iNr-wp-zyq" kind="relationship" relationship="rootViewController" id="gYM-04-DAl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7M-J6-cyv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521.7391304347827" y="-340.17857142857139"/>
+        </scene>
+        <!--Groups-->
+        <scene sceneID="IkE-SB-mmp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qUv-1L-drI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Groups" image="photo" selectedImage="photo" id="9AZ-5S-PRG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SRR-64-h5A">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1Ps-Hn-QFF" kind="relationship" relationship="rootViewController" id="CbB-5j-s4Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kL6-2v-VEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521.7391304347827" y="308.70535714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo" width="30" height="30"/>
+        <image name="photo-7" width="30" height="30"/>
+    </resources>
+</document>
